@@ -1,80 +1,54 @@
 export default function Download() {
   return (
     <section className="section">
-      Here's an example of a download page for the Best Rated Private Elementary Schools Austin, TX in Austin, TX:
+      Here's an example of a JSX page component for the download page:
 
 ```jsx
 import Head from 'next/head';
-import Link from 'next/link';
 
 function DownloadPage() {
   return (
-    <div>
+    <>
       <Head>
         <title>Download - Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Download our list of best rated private elementary schools in Austin, TX" />
+        <meta name="description" content="Download information about the best private elementary schools in Austin, TX" />
+        <meta property="og:title" content="Download - Best Rated Private Elementary Schools Austin, TX" />
+        <meta property="og:description" content="Download information about the best private elementary schools in Austin, TX" />
       </Head>
-
-      <main>
-        <section className="hero">
-          <h1>Download Our List</h1>
-          <p>Get access to our comprehensive list of best rated private elementary schools in Austin, TX.</p>
-          <p>Stay ahead of the curve and make informed decisions about your child's education.</p>
+      <main className="max-w-7xl mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-4">Download Information</h1>
+        <p>Welcome to the download page for Best Rated Private Elementary Schools Austin, TX. Here, you can find downloadable resources and information about our top-rated private elementary schools in Austin, TX.</p>
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold mb-4">Download Our Brochure</h2>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
+            Download Brochure (PDF)
+          </button>
         </section>
-
-        <section className="download">
-          <h2>Download Our List</h2>
-          <p>Get instant access to our list of best rated private elementary schools in Austin, TX. No email required!</p>
-          <ul>
-            <li>
-              <Link href="/list">
-                <a>
-                  <i className="fas fa-file-download" />
-                  Download Our List (PDF)
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/list">
-                <a>
-                  <i className="fas fa-file-excel" />
-                  Download Our List (Excel)
-                </a>
-              </Link>
-            </li>
-          </ul>
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold mb-4">Download Our Guide</h2>
+          <a
+            href="/guide.pdf"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+            download
+          >
+            Download Guide (PDF)
+          </a>
         </section>
-
-        <section className="features">
-          <h2>Features of Our List</h2>
-          <ul>
-            <li>
-              <i className="fas fa-star" />
-              Comprehensive list of best rated private elementary schools in Austin, TX
-            </li>
-            <li>
-              <i className="fas fa-book" />
-              Detailed information about each school, including academics, extracurriculars, and more
-            </li>
-            <li>
-              <i className="fas fa-chart-line" />
-              Easy-to-use format for quick reference
-            </li>
-          </ul>
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold mb-4">Download Our Comparison Chart</h2>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
+            Download Comparison Chart (PDF)
+          </button>
         </section>
       </main>
-
-      <footer>
-        <p>&copy; {new Date().getFullYear()} Best Rated Private Elementary Schools Austin, TX. All rights reserved.</p>
-      </footer>
-    </div>
+    </>
   );
 }
 
 export default DownloadPage;
 ```
 
-This code generates a basic download page for the Best Rated Private Elementary Schools Austin, TX in Austin, TX. The page includes a hero section, a download section, a features section, and a footer. The page also includes links to download the list of schools in PDF and Excel formats. You can customize the code to fit your specific needs.
+This code creates a basic download page with links to download a brochure, guide, and comparison chart in PDF format. You can customize it to fit your needs and add more features as required. Make sure to replace the "/guide.pdf" link with the actual path to your PDF file.
     </section>
   );
 }
