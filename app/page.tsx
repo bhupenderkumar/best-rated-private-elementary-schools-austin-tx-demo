@@ -9,98 +9,75 @@ export default function Home() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Rated Private Elementary Schools Austin, TX</title>
     <style>
-        /* Add some basic styling for the hero section */
         .hero {
             background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #fff;
-            padding: 100px 0;
-            text-align: center;
+            font-size: 48px;
         }
         
         .hero h1 {
             font-size: 48px;
-            font-weight: bold;
             margin-bottom: 20px;
         }
         
         .hero p {
             font-size: 18px;
-            margin-bottom: 40px;
+            color: #fff;
+        }
+        
+        .highlight {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
         }
         
         .feature {
-            background-color: #f7f7f7;
-            padding: 20px;
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-        }
-        
-        .feature h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .feature ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .feature li {
-            font-size: 18px;
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Empowering Young Minds in a Nurturing Environment</h1>
-            <p>At Best Rated Private Elementary Schools Austin, TX, we provide a well-rounded education that fosters academic excellence, creativity, and social responsibility. Our experienced teachers, cutting-edge facilities, and commitment to individualized learning make us the top choice for families in Austin.</p>
-        </section>
-        <section>
-            <h2>Feature Highlights</h2>
-            <div class="feature">
-                <h2>State-of-the-Art Facilities</h2>
-                <ul>
-                    <li>Modern classrooms with interactive whiteboards and laptops</li>
-                    <li>Well-equipped science and art labs</li>
-                    <li>Dedicated library and media center</li>
-                </ul>
-            </div>
-            <div class="feature">
-                <h2>Experienced and Dedicated Faculty</h2>
-                <ul>
-                    <li>Highly qualified teachers with advanced degrees</li>
-                    <li>Small class sizes for personalized attention</li>
-                    <li-Regular professional development to stay up-to-date with best practices</li>
-                </ul>
-            </div>
-            <div class="feature">
-                <h2>Comprehensive Curriculum</h2>
-                <ul>
-                    <li>Core subjects: math, language arts, science, social studies</li>
-                    <li>Specialized courses: foreign languages, music, art, physical education</li>
-                    <li>Enrichment programs: STEM, debate, leadership, community service</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Best Rated Private Elementary Schools Austin, TX. All rights reserved.</p>
-    </footer>
+    <div class="hero">
+        <h1>Empowering Young Minds, One Student at a Time</h1>
+        <p>At Best Rated Private Elementary Schools Austin, TX, we are dedicated to providing a world-class education that fosters academic excellence, creativity, and character development in every student.</p>
+    </div>
+    <section>
+        <h2>Why Choose Us?</h2>
+        <div class="highlight">
+            <h3>Small Class Sizes</h3>
+            <p>Our small class sizes ensure that each student receives personalized attention and guidance from our experienced teachers.</p>
+        </div>
+        <div class="highlight">
+            <h3>State-of-the-Art Facilities</h3>
+            <p>Our modern facilities are equipped with the latest technology and amenities to provide a comfortable and stimulating learning environment.</p>
+        </div>
+        <div class="highlight">
+            <h3>Extracurricular Activities</h3>
+            <p>We offer a range of extracurricular activities and sports programs to help students develop their interests and talents outside of the classroom.</p>
+        </div>
+        <div class="highlight">
+            <h3>Strong Community Ties</h3>
+            <p>We foster strong relationships with local businesses and organizations to provide students with opportunities for internships, mentorship, and community service.</p>
+        </div>
+    </section>
+    <section class="feature">
+        <h2>Our Mission</h2>
+        <p>To provide a high-quality, well-rounded education that prepares students for success in an ever-changing world.</p>
+    </section>
+    <section class="feature">
+        <h2>Our Values</h2>
+        <p>We value academic excellence, creativity, critical thinking, and character development in every student.</p>
+    </section>
+    <section class="feature">
+        <h2>Accreditation</h2>
+        <p>We are accredited by the Texas Private School Accreditation Commission (TEPSAC) and the National Association of Private Schools (NAPS).</p>
+    </section>
 </body>
 </html>
       </section>
