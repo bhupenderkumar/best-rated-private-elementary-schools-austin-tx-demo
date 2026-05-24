@@ -1,56 +1,38 @@
 export default function Contact() {
   return (
     <section className="section">
-      ```jsx
-// pages/contact.js
+      Here's an example of a Next.js page component for the contact page:
 
+```jsx
 import Head from 'next/head';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function ContactPage() {
   return (
     <>
       <Head>
         <title>Contact Us - Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Get in touch with us at Best Rated Private Elementary Schools Austin, TX" />
-        <meta name="keywords" content="private elementary schools, austin, tx, contact us" />
+        <meta name="description" content="Get in touch with us at Best Rated Private Elementary Schools Austin, TX." />
       </Head>
 
-      <div className="container">
-        <h1 className="title">Get in Touch with Us</h1>
-        <p>Unfortunately, we do not have a phone number or email address available at this time. However, we appreciate your interest in our school and look forward to connecting with you in the future.</p>
-
-        <h2 className="subheading">Location</h2>
-        <p>We are a virtual school, and we do not have a physical location at this time.</p>
-
-        <h2 className="subheading">Stay Connected</h2>
-        <p>Follow us on social media to stay up-to-date on the latest news and announcements from our school.</p>
-
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Container className="pt-5 pb-5">
+        <Row className="justify-content-center">
+          <Col xs={12} md={8} lg={6}>
+            <h1 className="text-center mb-4">Contact Us</h1>
+            <p>
+              We appreciate your interest in Best Rated Private Elementary Schools Austin, TX. While we do not have a physical address, phone number, or email, we encourage you to explore our website for more information about our school.
+            </p>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
-};
+}
 
 export default ContactPage;
 ```
 
-This is a basic example of a contact page in Next.js. The page does not have a phone number, email address, or physical address, but it does provide a call to action to follow the school on social media. You can customize the HTML structure and CSS to fit your needs.
+This code uses the React Bootstrap library to create a simple contact page layout, with a centered title and a paragraph of text. The page also includes a `Head` component from Next.js to set the page's title and meta description.
     </section>
   );
 }
