@@ -3,41 +3,41 @@ export default function About() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
     <>
       <Head>
-        <title>About Us - Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Learn more about our mission, values, and approach to education at Best Rated Private Elementary Schools Austin, TX." />
+        <title>About Us | Best Rated Private Elementary Schools Austin, TX</title>
+        <meta name="description" content="Learn about our mission, values, and history at Best Rated Private Elementary Schools Austin, TX." />
+        <meta name="keywords" content="private elementary schools, best rated, austin, tx" />
       </Head>
 
       <main className="container mx-auto p-4 pt-6 md:p-6">
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
-          <p className="text-gray-600 mb-4">At Best Rated Private Elementary Schools Austin, TX, our mission is to provide a nurturing and challenging environment that fosters the intellectual, social, and emotional growth of each student.</p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Our Values</h2>
-          <ul className="list-none mb-4">
-            <li className="mb-2">Academic Excellence</li>
-            <li className="mb-2">Inclusivity and Diversity</li>
-            <li className="mb-2">Community and Social Responsibility</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Our Approach</h2>
-          <p className="text-gray-600 mb-4">Our approach to education is centered around providing a well-rounded experience that prepares students for success in all areas of life. We achieve this through a combination of academic rigor, extracurricular activities, and community service.</p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Meet Our Team</h2>
-          <p className="text-gray-600 mb-4">Our team of educators and staff are dedicated to supporting the growth and development of each student. Meet the individuals who make up our community here.</p>
-        </section>
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full md:w-1/2 xl:w-1/3 p-4">
+            <div className="bg-white rounded-lg shadow-lg">
+              <Image src="/image-about.jpg" alt="About Us Image" width={800} height={600} className="object-cover w-full h-64" />
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-2/3 p-4">
+            <p className="text-lg leading-relaxed mb-4">
+              Welcome to Best Rated Private Elementary Schools Austin, TX, where we are dedicated to providing a high-quality education to our students. Our mission is to foster a love of learning, creativity, and critical thinking in a supportive and inclusive environment.
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              Our school was founded on the principles of academic excellence, character development, and community engagement. We are committed to helping our students become responsible, compassionate, and confident individuals who are prepared to succeed in an ever-changing world.
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              At Best Rated Private Elementary Schools Austin, TX, we believe that every child is unique and deserves a tailored education that meets their individual needs. Our experienced and dedicated teachers work closely with parents to create a personalized learning plan that fosters academic growth, social development, and emotional well-being.
+            </p>
+            <Link href="/our-mission" passHref>
+              <a className="text-blue-600 hover:text-blue-800">Learn More About Our Mission</a>
+            </Link>
+          </div>
+        </div>
       </main>
     </>
   );
