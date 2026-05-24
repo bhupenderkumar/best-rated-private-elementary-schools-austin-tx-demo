@@ -9,46 +9,43 @@ function AboutPage() {
     <>
       <Head>
         <title>About Us | Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Learn more about our mission, values, and approach to education at Best Rated Private Elementary Schools Austin, TX." />
+        <meta name="description" content="Learn more about our school's mission, values, and history." />
       </Head>
 
-      <div className="container">
-        <h1>About Us</h1>
-        <p>
-          At Best Rated Private Elementary Schools Austin, TX, we are dedicated to providing a high-quality education that fosters academic excellence, creativity, and character development in our students.
-        </p>
-        <p>
-          Our mission is to create a supportive and inclusive learning environment that inspires our students to reach their full potential and become confident, compassionate, and responsible individuals.
-        </p>
-        <p>
-          We are committed to:
-        </p>
-        <ul>
-          <li>Providing a rigorous and engaging curriculum that prepares students for success in middle school and beyond</li>
-          <li>Fostering a love of learning and a growth mindset in our students</li>
-          <li>Developing the social, emotional, and physical skills necessary for students to thrive in a rapidly changing world</li>
-          <li>Building strong relationships between students, teachers, parents, and the community</li>
-        </ul>
-        <h2>Our Values</h2>
-        <p>
-          At Best Rated Private Elementary Schools Austin, TX, we value:
-        </p>
-        <ul>
-          <li>Achievement: We strive for excellence in all aspects of school life</li>
-          <li>Innovation: We encourage creativity, experimentation, and calculated risk-taking</li>
-          <li>Inclusion: We welcome and support students from diverse backgrounds and abilities</li>
-          <li>Integrity: We act with honesty, trustworthiness, and respect for others</li>
-        </ul>
-        <h2>Our Approach</h2>
-        <p>
-          We believe that every child learns differently and at their own pace. Our approach is designed to meet the unique needs of each student, while also promoting academic excellence and social responsibility.
-        </p>
-        <p>
-          Our teachers use a variety of instructional strategies to engage students, including project-based learning, hands-on activities, and technology integration.
-        </p>
-        <p>
-          We also prioritize student well-being and offer a range of support services, including counseling, tutoring, and extracurricular activities.
-        </p>
+      <div className="container mx-auto p-4 md:p-6">
+        <h1 className="text-3xl font-bold mb-4">About Us</h1>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
+          <p>
+            At Best Rated Private Elementary Schools Austin, TX, our mission is to provide a world-class education that fosters academic excellence, creativity, and social responsibility. We are committed to helping our students become confident, compassionate, and critical thinkers who are prepared to succeed in an ever-changing world.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-2">Our Values</h2>
+          <ul className="list-disc ml-4">
+            <li>Academic Excellence</li>
+            <li>Respect and Empathy</li>
+            <li>Curiosity and Creativity</li>
+            <li>Community and Collaboration</li>
+            <li>Integrity and Responsibility</li>
+          </ul>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-2">Our History</h2>
+          <p>
+            Best Rated Private Elementary Schools Austin, TX was founded in [Year] with a vision to provide a unique and supportive learning environment that allows students to thrive academically, socially, and emotionally. Since then, we have grown to become one of the top private elementary schools in Austin, TX, with a reputation for excellence and a commitment to innovation.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
+          <p>
+            We would love to hear from you! If you have any questions or would like to schedule a tour, please contact us at [insert contact email or phone number].
+          </p>
+        </section>
       </div>
     </>
   );
@@ -56,8 +53,6 @@ function AboutPage() {
 
 export default AboutPage;
 ```
-
-This JSX code generates a basic structure for an "About Us" page, including a title, mission statement, values, and approach to education. You can customize and add content as needed to fit your specific needs.
     </section>
   );
 }
