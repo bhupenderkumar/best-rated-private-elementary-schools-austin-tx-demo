@@ -8,45 +8,67 @@ export default function Home() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Rated Private Elementary Schools Austin, TX</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .hero .description {
+            font-size: 24px;
+        }
+        
+        .feature {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#programs">Our Programs</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Parents</a></li>
+                <li><a href="#">Students</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <h1>Welcome to Best Rated Private Elementary Schools Austin, TX</h1>
-            <p>Empowering young minds to reach their full potential</p>
-            <button>Learn More</button>
+        <section class="hero">
+            <h1>Empowering Young Minds, One Student at a Time</h1>
+            <p class="description">At Best Rated Private Elementary Schools Austin, TX, we strive to create a nurturing and inclusive environment where students can thrive academically, socially, and emotionally.</p>
         </section>
-        <section id="features">
-            <h2>What Sets Us Apart</h2>
-            <ul>
-                <li>
-                    <h3>Smaller Class Sizes</h3>
-                    <p>Our average class size is 15 students, ensuring personalized attention and a nurturing environment</p>
-                </li>
-                <li>
-                    <h3>Experienced Teachers</h3>
-                    <p>Our teachers are highly qualified, passionate, and dedicated to providing a top-notch education</p>
-                </li>
-                <li>
-                    <h3>State-of-the-Art Facilities</h3>
-                    <p>Our campus features modern classrooms, a library, gym, and playground, providing a safe and engaging environment for learning</p>
-                </li>
-                <li>
-                    <h3>Holistic Education</h3>
-                    <p>We offer a comprehensive education that includes arts, music, physical education, and character development</p>
-                </li>
-            </ul>
+        <section class="feature">
+            <h2>Small Class Sizes</h2>
+            <p>We maintain an average class size of 12 students, allowing our teachers to provide individualized attention and support to each student.</p>
+        </section>
+        <section class="feature">
+            <h2>Experienced Faculty</h2>
+            <p>Our teachers are highly qualified, passionate, and dedicated to helping students achieve their full potential.</p>
+        </section>
+        <section class="feature">
+            <h2>State-of-the-Art Facilities</h2>
+            <p>We pride ourselves on maintaining modern and well-equipped facilities that cater to the diverse needs of our students.</p>
+        </section>
+        <section class="feature">
+            <h2>Personalized Learning Plans</h2>
+            <p>We work closely with parents to develop individualized learning plans that cater to each student's unique learning style and abilities.</p>
+        </section>
+        <section class="feature">
+            <h2>Community Engagement</h2>
+            <p>We foster a sense of community by hosting regular events, workshops, and activities that promote social responsibility, creativity, and critical thinking.</p>
         </section>
     </main>
     <footer>
