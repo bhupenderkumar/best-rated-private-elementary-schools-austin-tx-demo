@@ -4,64 +4,90 @@ export default function Contact() {
       ```jsx
 import Head from 'next/head';
 
-const ContactPage = () => {
+function ContactPage() {
   return (
     <>
       <Head>
         <title>Contact Us - Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Contact us for inquiries about Best Rated Private Elementary Schools Austin, TX." />
-        <meta name="keywords" content="Private Elementary Schools Austin, TX, Contact Us" />
+        <meta name="description" content="Get in touch with us at Best Rated Private Elementary Schools Austin, TX" />
       </Head>
 
-      <main className="contact-page">
-        <section className="contact-header">
-          <h1>Contact Us</h1>
-        </section>
+      <main className="max-w-7xl mx-auto p-4 pt-6 text-gray-900">
+        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+        <p className="mb-4">We're always happy to hear from you. Unfortunately, we do not have a phone number or physical address available at this time.</p>
 
-        <section className="contact-content">
-          <h2>Get in Touch</h2>
-          <p>Thank you for considering Best Rated Private Elementary Schools Austin, TX. We look forward to hearing from you!</p>
+        <h2 className="text-2xl font-bold mb-4">Email Us</h2>
+        <p className="mb-4">We're currently not accepting email inquiries. Please check back later for updates.</p>
 
-          <div className="contact-info">
-            <p>No phone number is available at this time.</p>
-            <p>No email address is available at this time.</p>
-            <p>No physical address is available at this time.</p>
-          </div>
+        <h2 className="text-2xl font-bold mb-4">Get Directions</h2>
+        <p className="mb-4">We're currently not providing a physical address. Please check back later for updates.</p>
 
-          <div className="contact-form">
-            <form>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
+        <h2 className="text-2xl font-bold mb-4">Stay Connected</h2>
+        <p className="mb-4">Follow us on social media to stay up-to-date with the latest news and updates from Best Rated Private Elementary Schools Austin, TX.</p>
 
-          <div className="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.1241451444196!2d-97.72944488500001!3d30.267157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866b0f8d9d8c8bbf%3A0x6f1d6a3e7eb3a5c8!2sAustin%2C%20TX!5e0!3m2!1sen!2sin!4v1679714391114!5m2!1sen!2sin" frameBorder="0" allowFullScreen="" loading="lazy"></iframe>
-          </div>
-        </section>
+        {/* Social media links */}
+        <div className="flex flex-wrap justify-center mb-4">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 mr-4 bg-blue-500 text-white rounded-full focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-6 h-6"
+            >
+              <path d="M16 5v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H18zM4 5h3v2H4V5zm3 0h3v2h-3V5z" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 mr-4 bg-red-500 text-white rounded-full focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-6 h-6"
+            >
+              <path d="M12 2L4 10h8z" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 mr-4 bg-yellow-500 text-white rounded-full focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-6 h-6"
+            >
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-0 14H5V5h14v14z" />
+            </svg>
+          </a>
+        </div>
       </main>
     </>
   );
-};
+}
 
 export default ContactPage;
 ```
 
-This JSX code generates a basic contact page for Best Rated Private Elementary Schools Austin, TX. It includes a header, a contact content section, a contact info section, a contact form, and a map container. The map is a Google Map iframe. 
-
-Note: You should replace the Google Map iframe src with your actual map URL. 
-
-Also, this code does not include any styles. You can add your own CSS to style the page as you like. 
-
-This code assumes you are using Next.js. If you are using a different framework, the code may need to be modified. 
-
-This code does not include any server-side rendering or API calls. If you need to make API calls or use server-side rendering, you will need to modify the code accordingly. 
-
-This code does not include any error handling or validation. If you need to add error handling or validation, you will need to modify the code accordingly. 
-
-This code is a basic example and may need to be modified to fit your specific use case.
+This JSX code generates a basic contact page for the Best Rated Private Elementary Schools Austin, TX. It includes a header with a title, a brief message, and links to email, get directions, and social media. The social media links are currently inactive, but you can replace the `href` attributes with the actual URLs for your school's social media profiles.
     </section>
   );
 }
