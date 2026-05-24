@@ -3,47 +3,61 @@ export default function Programs() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
+import Image from 'next/image';
 
-function ProgramsPage() {
+function Programs() {
   return (
     <>
       <Head>
-        <title>Programs | Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Best Rated Private Elementary Schools Austin, TX offers a range of programs for students." />
+        <title>Programs - Best Rated Private Elementary Schools Austin, TX</title>
+        <meta name="description" content="Discover our comprehensive programs at Best Rated Private Elementary Schools Austin, TX." />
       </Head>
-      <main className="max-w-7xl mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Academic Programs</h1>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-white shadow-md rounded-md p-4">
-            <h2 className="text-2xl font-bold mb-2">STEM Program</h2>
-            <p>Our STEM program is designed to foster a love of science, technology, engineering, and math in our students.</p>
+
+      <main className="container mx-auto mt-16">
+        <h1 className="text-3xl font-bold mb-8">Our Programs</h1>
+
+        <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-white shadow-md rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">Academic Excellence Program</h2>
+            <p className="mb-4">Our Academic Excellence Program is designed to foster a love of learning in our students.</p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
           </div>
-          <div className="bg-white shadow-md rounded-md p-4">
-            <h2 className="text-2xl font-bold mb-2">Arts Program</h2>
-            <p>Our arts program provides students with the opportunity to explore their creativity through music, dance, theater, and visual arts.</p>
+
+          <div className="bg-white shadow-md rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">STEM Program</h2>
+            <p className="mb-4">Our STEM Program provides students with a comprehensive education in science, technology, engineering, and math.</p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
           </div>
-          <div className="bg-white shadow-md rounded-md p-4">
-            <h2 className="text-2xl font-bold mb-2">Language Program</h2>
-            <p>Our language program offers students the opportunity to learn multiple languages, including Spanish, French, and Mandarin.</p>
+
+          <div className="bg-white shadow-md rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">Arts Program</h2>
+            <p className="mb-4">Our Arts Program offers students the opportunity to explore their creativity through music, art, and drama.</p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
           </div>
-          <div className="bg-white shadow-md rounded-md p-4">
-            <h2 className="text-2xl font-bold mb-2">Special Education Program</h2>
-            <p>Our special education program is designed to provide support and accommodations for students with special needs.</p>
-          </div>
-          <div className="bg-white shadow-md rounded-md p-4">
-            <h2 className="text-2xl font-bold mb-2">Gifted and Talented Program</h2>
-            <p>Our gifted and talented program is designed to provide challenging and engaging learning opportunities for students who excel academically.</p>
-          </div>
-        </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold mb-4">Additional Programs</h2>
+          <ul className="list-disc ml-6">
+            <li>After-school programs</li>
+            <li>Summer camps</li>
+            <li>Sports teams</li>
+            <li>Clubs and organizations</li>
+          </ul>
+        </section>
       </main>
+
+      <footer className="bg-gray-100 text-center p-4 mt-8">
+        <p>&copy; 2023 Best Rated Private Elementary Schools Austin, TX. All rights reserved.</p>
+      </footer>
     </>
   );
 }
 
-export default ProgramsPage;
+export default Programs;
 ```
 
-This JSX code creates a simple page component for the "Programs" page of the Best Rated Private Elementary Schools Austin, TX website. The page includes a header with a title and meta description, and a main content area with a grid of program cards. Each program card includes a header with the program name and a brief description.
+This JSX code generates a Next.js page component for the programs page of the Best Rated Private Elementary Schools Austin, TX website. The page features a grid layout with three program sections, each with a title, description, and a "Learn More" button. The page also includes a list of additional programs and a footer with copyright information.
     </section>
   );
 }
