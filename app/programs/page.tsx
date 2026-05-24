@@ -1,9 +1,7 @@
 export default function Programs() {
   return (
     <section className="section">
-      Here's an example of a JSX page component for the programs page of Best Rated Private Elementary Schools Austin, TX:
-
-```jsx
+      ```jsx
 import Head from 'next/head';
 
 function ProgramsPage() {
@@ -11,63 +9,33 @@ function ProgramsPage() {
     <>
       <Head>
         <title>Programs | Best Rated Private Elementary Schools Austin, TX</title>
-        <meta name="description" content="Discover the best private elementary schools in Austin, TX, offering top-notch programs for your child's success." />
+        <meta name="description" content="Best Rated Private Elementary Schools Austin, TX offers a range of programs for students." />
       </Head>
-
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/admissions">Admissions</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li className="active"><a href="/programs">Programs</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section className="hero">
-          <h1>Unlock Your Child's Potential</h1>
-          <p>Discover the best private elementary schools in Austin, TX, offering top-notch programs for your child's success.</p>
-        </section>
-
-        <section className="programs">
-          <h2>Our Programs</h2>
-          <ul>
-            <li>
-              <h3>Early Childhood Program</h3>
-              <p>Our early childhood program is designed to foster a love of learning in young children, with a focus on social, emotional, and cognitive development.</p>
-            </li>
-            <li>
-              <h3>Elementary Program</h3>
-              <p>Our elementary program builds on the foundations established in our early childhood program, with a focus on academic rigor, creativity, and critical thinking.</p>
-            </li>
-            <li>
-              <h3>Special Needs Program</h3>
-              <p>Our special needs program provides individualized support and accommodations for students with diverse learning needs, ensuring they have equal access to a high-quality education.</p>
-            </li>
-          </ul>
-        </section>
-
-        <section className="testimonials">
-          <h2>What Our Parents Say</h2>
-          <ul>
-            <li>
-              <p>"Our child has thrived in this school's supportive environment, where they feel valued, challenged, and encouraged to grow."</p>
-              <p>- Rachel P., Parent</p>
-            </li>
-            <li>
-              <p>"The teachers at this school are truly dedicated to helping each student reach their full potential."</p>
-              <p>- Mark K., Parent</p>
-            </li>
-          </ul>
-        </section>
+      <main className="max-w-7xl mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-4">Academic Programs</h1>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-2xl font-bold mb-2">STEM Program</h2>
+            <p>Our STEM program is designed to foster a love of science, technology, engineering, and math in our students.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-2xl font-bold mb-2">Arts Program</h2>
+            <p>Our arts program provides students with the opportunity to explore their creativity through music, dance, theater, and visual arts.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-2xl font-bold mb-2">Language Program</h2>
+            <p>Our language program offers students the opportunity to learn multiple languages, including Spanish, French, and Mandarin.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-2xl font-bold mb-2">Special Education Program</h2>
+            <p>Our special education program is designed to provide support and accommodations for students with special needs.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-2xl font-bold mb-2">Gifted and Talented Program</h2>
+            <p>Our gifted and talented program is designed to provide challenging and engaging learning opportunities for students who excel academically.</p>
+          </div>
+        </div>
       </main>
-
-      <footer>
-        <p>&copy; 2023 Best Rated Private Elementary Schools Austin, TX. All rights reserved.</p>
-      </footer>
     </>
   );
 }
@@ -75,7 +43,7 @@ function ProgramsPage() {
 export default ProgramsPage;
 ```
 
-This code creates a basic structure for the programs page, including a hero section, a programs section, a testimonials section, and a footer. You can customize the content and styling to fit your needs.
+This JSX code creates a simple page component for the "Programs" page of the Best Rated Private Elementary Schools Austin, TX website. The page includes a header with a title and meta description, and a main content area with a grid of program cards. Each program card includes a header with the program name and a brief description.
     </section>
   );
 }
